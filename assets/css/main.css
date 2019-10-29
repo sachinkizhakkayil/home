@@ -1,0 +1,139 @@
+body
+{
+    font-size: 20px;
+    color: #202020;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'roboto condensed';
+    font-weight: 300;
+
+   background-size: cover;
+   overflow: hidden;
+   background-position: fixed;
+
+
+}
+
+::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+ color: #000000;
+}
+
+::-ms-input-placeholder { 
+ color: #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.8fr 1.4fr 0.4fr;
+  grid-template-rows: 0.6fr 2.1fr 0.3fr;
+  grid-template-areas: ". . . links" ". blah . links" ". . . links";
+}
+
+.links { grid-area: links; }
+
+.blah {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "blah1 blah1 blah1" ". . .";
+  grid-area: blah;
+}
+
+.blah1 { grid-area: blah1; }
+
+.links{
+	background-color: #7c7c7c;
+	border-color: #000000;
+	height: 250pt;
+	border-radius: 4px;
+}
+
+.blah1{
+	background-color: #262626;
+	border-color: #000000;
+	height: 180pt;
+	border-radius: 4px;
+	vertical-align:middle
+}
+
+
+.blah
+{
+	color: white;
+}
+
+button
+{
+  background-color: #252525; /* Green */
+  border-color: #4CAF50;
+  color: white;
+  margin-left: 10px;
+  margin-right:10px;
+  width: 120pt;
+  padding: 10px 10px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.link span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -14px;
+  transition: 0.5s;
+}
+
+.link:hover span {
+  padding-right: 14px;
+}
+
+.link:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.search-butt
+{
+	background-color: #716f6e;
+	padding: 10px;
+	border-width: 0px;
+	border-radius: 5px
+	color: green;
+	text-align: right;
+	transition: all 0.75s;
+}
+.search-butt:hover{
+	background-color: white;
+}
+
+
+.hide{
+	 font-size: 16px;
+	 color: #63a647;
+	 text-decoration: none;
+
+}
+
+
+
+
+
+

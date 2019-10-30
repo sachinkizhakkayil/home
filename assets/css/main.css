@@ -12,7 +12,7 @@ body
     margin-right: 5%;
     font-family: 'roboto condensed';
     font-weight: 300;
-
+background-color: rgb(40,40,40);
    background-size: cover;
    overflow: hidden;
    background-position: fixed;

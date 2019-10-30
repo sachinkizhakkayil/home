@@ -1,3 +1,8 @@
+html
+{
+      background-color: rgb(40,40,40);
+}
+
 body
 {
     font-size: 20px;
@@ -11,8 +16,6 @@ body
    background-size: cover;
    overflow: hidden;
    background-position: fixed;
-
-
 }
 
 ::placeholder {

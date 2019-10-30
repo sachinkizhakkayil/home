@@ -1,4 +1,9 @@
-html,body
+html
+{
+background-color: #282828;
+}
+
+body
 {
     font-size: 20px;
     color: #202020;

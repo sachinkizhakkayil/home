@@ -1,8 +1,3 @@
-html
-{
-background-color: #282828;
-}
-
 body
 {
     font-size: 20px;
@@ -12,7 +7,7 @@ body
     margin-right: 5%;
     font-family: 'roboto condensed';
     font-weight: 300;
-    background-color: #282828;
+
    background-size: cover;
    overflow: hidden;
    background-position: fixed;
@@ -53,24 +48,24 @@ body
 .blah1 { grid-area: blah1; }
 
 .links{
-	background-color: #7c7c7c;
-	border-color: #000000;
-	height: 250pt;
-	border-radius: 4px;
+  background-color: #7c7c7c;
+  border-color: #000000;
+  height: 250pt;
+  border-radius: 4px;
 }
 
 .blah1{
-	background-color: #262626;
-	border-color: #000000;
-	height: 180pt;
-	border-radius: 4px;
-	vertical-align:middle
+  background-color: #262626;
+  border-color: #000000;
+  height: 180pt;
+  border-radius: 4px;
+  vertical-align:middle
 }
 
 
 .blah
 {
-	color: white;
+  color: white;
 }
 
 button
@@ -117,23 +112,23 @@ button
 
 .search-butt
 {
-	background-color: #716f6e;
-	padding: 10px;
-	border-width: 0px;
-	border-radius: 5px
-	color: green;
-	text-align: right;
-	transition: all 0.75s;
+  background-color: #716f6e;
+  padding: 10px;
+  border-width: 0px;
+  border-radius: 5px
+  color: green;
+  text-align: right;
+  transition: all 0.75s;
 }
 .search-butt:hover{
-	background-color: white;
+  background-color: white;
 }
 
 
 .hide{
-	 font-size: 16px;
-	 color: #63a647;
-	 text-decoration: none;
+   font-size: 16px;
+   color: #63a647;
+   text-decoration: none;
 
 }
 

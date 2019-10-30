@@ -1,4 +1,4 @@
-body
+html,body
 {
     font-size: 20px;
     color: #202020;
@@ -7,7 +7,7 @@ body
     margin-right: 5%;
     font-family: 'roboto condensed';
     font-weight: 300;
-
+    background-color: #282828;
    background-size: cover;
    overflow: hidden;
    background-position: fixed;

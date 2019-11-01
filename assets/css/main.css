@@ -196,8 +196,8 @@ a{
 
 
 #quote {
-  font-family: 'ZCOOL XiaoWei', serif;
-  text-shadow: 2px 2px 5px #ffffff;
+/*  font-family: 'ZCOOL XiaoWei', serif;*/
+  text-shadow: 2px 2px 5px #ffffff; 
   font-size: 26px;
   text-align: center;
   color: #ffebeb;

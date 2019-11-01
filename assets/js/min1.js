@@ -1,14 +1,6 @@
-function onCreated(windowInfo) {
-  console.log(`Created window: ${windowInfo.id}`);
-}
+var windowObjectReference;
+var strWindowFeatures = "menubar=yes,incognito=yes,resizable=yes,scrollbars=yes,status=yes";
 
-function onError(error) {
-  console.log(`Error: ${error}`);
+function openRequestedPopup(strUrl) {
+  windowObjectReference = window.open(strUrl, "HOME", strWindowFeatures);
 }
-
-browser.browserAction.onClicked.addListener((tab) => {
-  var creating = browser.windows.create({
-    tabId: tab.id
-  });
-  creating.then(onCreated, onError);
-});

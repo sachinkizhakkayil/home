@@ -7,6 +7,3 @@ function openRequestedPopup(strUrl, strWindowName) {
     windowObjectReference.focus();
   };
 }
-
-
-

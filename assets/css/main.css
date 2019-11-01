@@ -7,12 +7,9 @@ body
 {
     font-size: 20px;
     color: #202020;
-    padding: 0;
-    margin-left: 5%;
-    margin-right: 5%;
     font-family: 'roboto condensed';
     font-weight: 300;
-background-color: rgb(40,40,40);
+    background-color: rgb(40,40,40);
    background-size: cover;
    overflow: hidden;
    background-position: fixed;
@@ -32,6 +29,9 @@ background-color: rgb(40,40,40);
 }
 
 .grid-container {
+      padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
   display: grid;
   grid-template-columns: 0.4fr 1.8fr 1.4fr 0.4fr;
   grid-template-rows: 0.6fr 2.1fr 0.3fr;
@@ -50,13 +50,13 @@ background-color: rgb(40,40,40);
 
 .blah1 { grid-area: blah1; }
 
-.links{
+/*.links{
   background-color: #7c7c7c;
   border-color: #000000;
   height: 250pt;
   border-radius: 4px;
 }
-
+*/
 .blah1{
   background-color: #262626;
   border-color: #000000;
@@ -71,46 +71,13 @@ background-color: rgb(40,40,40);
   color: white;
 }
 
-button
-{
-  background-color: #252525; /* Green */
-  border-color: #4CAF50;
-  color: white;
-  margin-left: 10px;
-  margin-right:10px;
-  width: 120pt;
-  padding: 10px 10px;
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
+
+.search-butt:hover{
+  background-color: gray;
 }
 
-.link span {
-  cursor: pointer;
+.search {
   position: relative;
-  transition: 0.5s;
-}
-
-.link span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -14px;
-  transition: 0.5s;
-}
-
-.link:hover span {
-  padding-right: 14px;
-}
-
-.link:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 .search-butt
@@ -122,11 +89,22 @@ button
   color: green;
   text-align: right;
   transition: all 0.75s;
-}
-.search-butt:hover{
-  background-color: white;
+  width: 6.5em;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: hsla(185, 100%, 62%, 0.2);
 }
 
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
+}
 
 .hide{
    font-size: 16px;
@@ -134,9 +112,105 @@ button
    text-decoration: none;
 
 }
+.hide:hover{
+  animation:blink 1s ; 
+}
+
+@keyframes blink{
+  0%{
+    color: #63a647;
+  }
+
+  30%{
+    color:rgb(40,40,40);
+  }
+  50%{
+    color:rgb(40,40,40);
+  }
+}
+
+
+
+/*links*/
+button {
+
+  cursor: pointer;
+  position: relative;
+  background-color: #252525; /* Green */
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right:10px;
+  border: none;
+  text-align: center;
+  /*border-radius: 4px;
+  border-color: #4CAF50;*/
+  width: 120px;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+a{
+  text-decoration: none;
+    color: white;
+    width: 120px;
+}
+
+.l {
+
+
+  transition: all 0.5s;
+
+}
+
+.l::before, .l::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.l::before {
+  top: 0;
+}
+
+.l::after {
+  bottom: 0;
+}
+
+.l:hover::before, .l:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.l {
+  position: relative;
+}
 
 
 
 
 
+#quote {
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-shadow: 2px 2px 5px #ffffff;
+  font-size: 26px;
+  text-align: center;
+  color: #ffebeb;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  height: auto;
+  top: 35%;
+  margin: 0 0 0 0;
+  transition: all .5s ease-in-out;
+}
 
+#quote:hover {
+  color: #b5b3b3;
+  transform: scale(1.1);
+}

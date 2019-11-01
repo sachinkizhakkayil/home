@@ -56,7 +56,7 @@ body
   height: 250pt;
   border-radius: 4px;
 }
-*/
+*//*
 .blah1{
   background-color: #262626;
   border-color: #000000;
@@ -64,7 +64,7 @@ body
   border-radius: 4px;
   vertical-align:middle
 }
-
+*/
 
 .blah
 {
@@ -197,7 +197,7 @@ a{
 
 #quote {
 /*  font-family: 'ZCOOL XiaoWei', serif;*/
-  text-shadow: 2px 2px 5px #ffffff; 
+ /* text-shadow: 2px 2px 5px #ffffff; */
   font-size: 26px;
   text-align: center;
   color: #ffebeb;

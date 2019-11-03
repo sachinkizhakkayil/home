@@ -11,7 +11,7 @@ html,body
     font-family: 'roboto condensed';
     font-weight: 300;
     background-color: rgb(40,40,40);
-   background-size: cover;
+   background-size: wrap;
    overflow: hidden;
 }
 
@@ -23,6 +23,7 @@ html,body
 }
 
 .main-div {
+  padding-left: 10px;
   display: grid;
   grid-template-columns: 1.5fr 1.1fr 0.4fr;
   grid-template-rows: 1fr 1fr;
@@ -36,7 +37,9 @@ html,body
 
 .switch { grid-area: switch; }
 
-.links { grid-area: links; }
+.links { 
+  padding-right: 10px;
+  grid-area: links; }
 
 .blah {
   display: grid;

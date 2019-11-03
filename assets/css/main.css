@@ -23,7 +23,6 @@ html,body
 }
 
 .main-div {
-  padding-left: 10px;
   display: grid;
   grid-template-columns: 1.5fr 1.1fr 0.4fr;
   grid-template-rows: 1fr 1fr;
@@ -37,9 +36,7 @@ html,body
 
 .switch { grid-area: switch; }
 
-.links { 
-  padding-right: 10px;
-  grid-area: links; }
+.links { grid-area: links; }
 
 .blah {
   display: grid;
@@ -177,6 +174,7 @@ input::placeholder {
 }
 
 .hide{
+  padding-left: 10px;
    font-size: 16px;
    color: #63a647;
    text-decoration: none;

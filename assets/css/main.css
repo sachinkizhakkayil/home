@@ -15,6 +15,72 @@ html,body
    overflow: hidden;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
+  grid-template-rows: 0.4fr 2.1fr 0.5fr;
+  grid-template-areas: "main-div . . ." ". blah blah links" ". . . .";
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1.5fr 1.1fr 0.4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "hide switch ." "search search search";
+  grid-area: main-div;
+}
+
+.search { grid-area: search; }
+
+.hide { grid-area: hide; }
+
+.switch { grid-area: switch; }
+
+.links { grid-area: links; }
+
+.blah {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  grid-template-areas: ". . ." "blah1 blah1 .";
+  grid-area: blah;
+}
+
+.blah1 { grid-area: blah1; }
+
+/*
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
+  grid-template-rows: 0.4fr 2.1fr 0.5fr;
+  grid-template-areas: "main-div . . ." ". blah blah links" ". . . .";
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "hide switch ." ". . .";
+  grid-area: main-div;
+}
+
+.switch { grid-area: switch; }
+
+.hide { grid-area: hide; }
+
+.links { grid-area: links; }
+
+.blah {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  grid-template-areas: ". . ." "blah1 blah1 .";
+  grid-area: blah;
+}
+
+.blah1 { grid-area: blah1; }
+*/
 /*::placeholder {
   color: #000000;
   opacity: 1;
@@ -28,7 +94,8 @@ html,body
  color: #000000;
 }
 */
-.grid-container {
+
+/*.grid-container {
       padding: 0;
     margin-left: 5%;
     margin-right: 5%;
@@ -49,7 +116,7 @@ html,body
 }
 
 .blah1 { grid-area: blah1; }
-
+*/
 /*.links{
   background-color: #7c7c7c;
   border-color: #000000;
@@ -83,7 +150,7 @@ html,body
 .search-butt
 {
   background-color: #716f6e;
-  padding: 10px;
+  /*padding: 10px;*/
   border-width: 0px;
   border-radius: 5px
   color: green;
@@ -136,7 +203,7 @@ button {
 
   cursor: pointer;
   position: relative;
-  background-color: #252525; /* Green */
+  background-color: rgb(40,40,40);/*#252525;  Green */
   margin-top: 15px;
   margin-left: 10px;
   margin-right:10px;
@@ -195,7 +262,7 @@ a{
 
 
 
-#quote {
+.quote {
 /*  font-family: 'ZCOOL XiaoWei', serif;*/
  /* text-shadow: 2px 2px 5px #ffffff; */
   font-size: 26px;
@@ -210,7 +277,7 @@ a{
   transition: all .5s ease-in-out;
 }
 
-#quote:hover {
+.quote:hover {
   color: #b5b3b3;
   transform: scale(1.1);
 }

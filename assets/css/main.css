@@ -6,13 +6,22 @@
 html,body
 {
     height: 100%;
-    font-size: 20px;
+    font-size: 30px;
     color: #202020;
     font-family: 'roboto condensed';
     font-weight: 300;
     background-color: rgb(40,40,40);
    background-size: wrap;
    overflow: hidden;
+}
+
+
+
+
+@media only (min-width: 700px;){
+
+body{
+      font-size: 20px;
 }
 
 .grid-container {
@@ -26,7 +35,7 @@ html,body
   display: grid;
   grid-template-columns: 1.5fr 1.1fr 0.4fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "hide switch ." "search search search";
+  grid-template-areas: "hide switch ." "search search .";
   grid-area: main-div;
 }
 
@@ -47,6 +56,53 @@ html,body
 }
 
 .blah1 { grid-area: blah1; }
+
+
+}
+
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.9fr 2fr 0.8fr;
+  grid-template-rows: 0.5fr 1.6fr 0.9fr;
+  grid-template-areas: "main-div main-div . ." ". blah blah links" ". . . .";
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "hide hide switch" "search search .";
+  padding-left: 10px;
+  grid-area: main-div;
+}
+
+.search { grid-area: search; }
+
+.hide { grid-area: hide; }
+
+.switch { grid-area: switch; }
+
+.links { 
+  font-size: inherit;
+  grid-area: links; }
+
+.blah {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 0.4fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  grid-template-areas: ". . ." "blah1 blah1 .";
+  grid-area: blah;
+}
+
+.blah1 { grid-area: blah1; }
+
 
 /*
 
@@ -282,3 +338,9 @@ a{
   color: #b5b3b3;
   transform: scale(1.1);
 }
+
+
+
+
+
+

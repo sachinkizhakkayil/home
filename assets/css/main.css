@@ -1,347 +1,177 @@
-/*html
-{
-      background-color: rgb(40,40,40);
-}
-*/
 html,body
 {
-    height: 100%;
     font-size: 30px;
     color: #202020;
     font-family: 'roboto condensed';
     font-weight: 300;
-    background-color: rgb(40,40,40);
-   background-size: wrap;
-   overflow: hidden;
+    background-size: wrap;
+    overflow-x: hidden;
+    
 }
 
-
-
-
-@media only (min-width: 700px;){
 
 body{
-      font-size: 20px;
+  overflow-y: hidden;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 
+.hero{
+
+  background-color: rgb(40,40,40);
+  height: 100vh;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
-  grid-template-rows: 0.4fr 2.1fr 0.5fr;
-  grid-template-areas: "main-div . . ." ". blah blah links" ". . . .";
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "pic . . blank" "About About About blank" "About About About blank";
 }
 
-.main-div {
-  display: grid;
-  grid-template-columns: 1.5fr 1.1fr 0.4fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "hide switch ." "search search .";
-  grid-area: main-div;
-}
+.links {
 
-.search { grid-area: search; }
-
-.hide { grid-area: hide; }
-
-.switch { grid-area: switch; }
-
-.links { grid-area: links; }
-
-.blah {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 1.2fr;
-  grid-template-areas: ". . ." "blah1 blah1 .";
-  grid-area: blah;
-}
-
-.blah1 { grid-area: blah1; }
-
+  padding-top: 40px;
+  position: fixed;
+  right:  1.2vw;
+  width: 80px;
+  margin-left: 10px;
 
 }
 
+.pic { grid-area: pic; }
+
+.About { grid-area: About; }
 
 
-
-
-
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.5fr 0.9fr 2fr 0.8fr;
-  grid-template-rows: 0.5fr 1.6fr 0.9fr;
-  grid-template-areas: "main-div main-div . ." ". blah blah links" ". . . .";
+.pic{
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.main-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "hide switch ." "search search .";
-  padding-left: 10px;
-  grid-area: main-div;
-}
-
-.search { grid-area: search; }
-
-.hide { grid-area: hide; }
-
-.switch { grid-area: switch; }
-
-.links { 
-  font-size: inherit;
-  grid-area: links; }
-
-.blah {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr 0.4fr;
-  grid-template-rows: 0.9fr 1.1fr;
-  grid-template-areas: ". . ." "blah1 blah1 .";
-  grid-area: blah;
-}
-
-.blah1 { grid-area: blah1; }
-
-
-/*
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
-  grid-template-rows: 0.4fr 2.1fr 0.5fr;
-  grid-template-areas: "main-div . . ." ". blah blah links" ". . . .";
-}
-
-.main-div {
-  display: grid;
-  grid-template-columns: 1.8fr 0.2fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  grid-template-areas: "hide switch ." ". . .";
-  grid-area: main-div;
-}
-
-.switch { grid-area: switch; }
-
-.hide { grid-area: hide; }
-
-.links { grid-area: links; }
-
-.blah {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 1.2fr;
-  grid-template-areas: ". . ." "blah1 blah1 .";
-  grid-area: blah;
-}
-
-.blah1 { grid-area: blah1; }
-*/
-/*::placeholder {
-  color: #000000;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
- color: #000000;
-}
-
-::-ms-input-placeholder { 
- color: #000000;
-}
-*/
-
-/*.grid-container {
-      padding: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-  display: grid;
-  grid-template-columns: 0.4fr 1.8fr 1.4fr 0.4fr;
-  grid-template-rows: 0.6fr 2.1fr 0.3fr;
-  grid-template-areas: ". . . links" ". blah . links" ". . . links";
-}
-
-.links { grid-area: links; }
-
-.blah {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "blah1 blah1 blah1" ". . .";
-  grid-area: blah;
-}
-
-.blah1 { grid-area: blah1; }
-*/
-/*.links{
-  background-color: #7c7c7c;
-  border-color: #000000;
-  height: 250pt;
-  border-radius: 4px;
-}
-*//*
-.blah1{
-  background-color: #262626;
-  border-color: #000000;
-  height: 180pt;
-  border-radius: 4px;
-  vertical-align:middle
-}
-*/
-
-.blah
+.About
 {
   color: white;
 }
 
-
-.search-butt:hover{
-  background-color: gray;
+.pic img{
+  height: 170px;
+  width: 170px;
+  text-align: center;
 }
-
-.search {
-  position: relative;
-}
-
-.search-butt
-{
-  background-color: #716f6e;
-  /*padding: 10px;*/
-  border-width: 0px;
-  border-radius: 5px;
-  color: green;
-  text-align: right;
-  transition: all 0.75s;
-  width: 6.5rem;
-  color: white;
-  font-size: inherit;
-  font-family: inherit;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-bottom-color: hsla(185, 100%, 62%, 0.2);
-}
-
-input:focus {
-  outline: none;
-}
-
-input::placeholder {
-  color: hsla(0, 0%, 100%, 0.6);
-}
-
-.hide{
-  padding-left: 10px;
-   font-size: 16px;
-   color: #63a647;
-   text-decoration: none;
-
-}
-.hide:hover{
-  animation:blink 1s ; 
-}
-
-@keyframes blink{
-  0%{
-    color: #63a647;
-  }
-
-  30%{
-    color:rgb(40,40,40);
-  }
-  50%{
-    color:rgb(40,40,40);
-  }
-}
-
-
 
 /*links*/
-button {
-  font-size: 1rem;
-  cursor: pointer;
-  position: relative;
-  width: 20%;
-  background-color: rgb(40,40,40);/*#252525;  Green */
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right:10px;
-  border: none;
-  text-align: center;
-  /*border-radius: 4px;
-  border-color: #4CAF50;*/
-  width: 120px;
-  padding: 15px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: all 0.5s;
-}
-a{
-  text-decoration: none;
-    color: white;
-    width: 120px;
-}
-
-.l {
-
-
-  transition: all 0.5s;
-
-}
-
-.l::before, .l::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 2px;
-  background-color: #3cefff;
-  transform-origin: center;
-  transform: translateX(-50%) scaleX(0);
-  transition: transform 0.4s ease;
-}
-
-.l::before {
-  top: 0;
-}
-
-.l::after {
-  bottom: 0;
-}
-
-.l:hover::before, .l:hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
 .l {
   position: relative;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  transition: all 0.25s ease-in-out;
 }
 
 
 
+.heading{
 
-
-.blah1 {
-/*  font-family: 'ZCOOL XiaoWei', serif;*/
- /* text-shadow: 2px 2px 5px #ffffff; */
-  font-size: 2.6rem;
-  text-align: center;
   color: #ffebeb;
-  position: absolute;
-  width: 50%;
-  left: 15%;
   height: auto;
   top: 35%;
   margin: 0 0 0 0;
+}
+
+.About h3{
+
+  font-size: 2rem;
+  padding-left: 15%;
+  width: 50%;
   transition: all .5s ease-in-out;
 }
 
-.blah1:hover {
+.About h3:hover {
   color: #b5b3b3;
   transform: scale(1.1);
+}
+.About h5{
+  padding-right: 30px;
+  padding-left: 20px;
+  word-spacing: 3px;
+  text-align: justify;
+  line-height: 2em;
+}
+.About h5::before{
+  content: '<span></span>';
+  background-color: white;
+}
+.About h5::after{
+  content: '<span></span>';
+  background-color: white;
 }
 
 
 
+/* second */
+.What{
+  align-items: center;
+  background-color: cadetblue;
+  height: 100vh;
+}
+.grid2-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "blankspace . . blank" "what what what blank" "what what what blank";
+}
+
+.blankspace { grid-area: blankspace; }
+
+.What { grid-area: What; }
+.what h3{
+  margin-top: 100px;
+  font-size: 1.7rem;
+}
 
 
 
+/* third */
+.Skills{
+  align-items: center;
+  background-color: #225555;
+  /* height: 100vh; */
+}
+.grid3-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1.6fr 0.4fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "blankspace . . blank" "skill skill skill blank" "skill skill skill blank";
+}
+
+.blankspace { grid-area: blankspace; }
+
+.Skill { grid-area: Skill; }
+.skill h3{
+  margin-top: 100px;
+  font-size: 1.7rem;
+}
+
+
+button{
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: all .5s ease-in-out;
+  color: #fff;
+}
+
+
+.l:hover{
+  height: 120px;
+}
